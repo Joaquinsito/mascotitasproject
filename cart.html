@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Mascotitas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,500;0,700;1,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c6935fce95.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo2-removebg-preview.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/car.png" width="30px" height="30px">
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+
+<!--------------Cart items details------------>
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>   
+                    <div class="cart-info">
+                        <img src="images/product1-cart.jpg" alt="">
+                        <div>
+                            <p>Black Dog Bandana</p>
+                            <small>Price: $50.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+            <tr>
+                <td>   
+                    <div class="cart-info">
+                        <img src="images/product10-cart.jpg" alt="">
+                        <div>
+                            <p>Black Dog Suetter</p>
+                            <small>Price: $100.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$100.00</td>
+            </tr>
+            <tr>
+                <td>   
+                    <div class="cart-info">
+                        <img src="images/toy2-cart.jpg" alt="">
+                        <div>
+                            <p>Red Bird Toy</p>
+                            <small>Price: $30.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$30.00</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$180.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>$30.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$210.00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+
+
+   
+<!-----------------footer ---------------->        
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Visit our facebook page</h3>
+                    <p>Go and see what we post in our page</p>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo2-removebg-preview-small-removebg-preview.png" alt="">
+                    <p>Look our videos on youtube and discover whay are we doing, how we are hellping other pets</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Coupons</li>  
+                        <li>Return Policy</li> 
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">Copyright 2022</p>
+        </div>
+    </div>
+
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if( MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+</html>
