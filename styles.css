@@ -123,6 +123,19 @@ p{
     color: #555;
     font-family: 'Pangolin', cursive;
 }
+.subtitle{
+    text-align: left;
+    margin: 0px;
+    position: relative;
+    line-height: 60px;
+    color: #ff523b;
+    font-family: 'Pangolin', cursive;
+}
+.line{
+    border: 2px solid #ff523b;
+    border-radius: 3px;
+}
+
 .title::after{
     content: '';
     background: #ff523b;
