@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-widht, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart - Mascotitas</title>
+    <title>All Products - Mascotitas</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,500;0,700;1,600&display=swap" rel="stylesheet">
@@ -46,83 +46,75 @@
                 <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
             </div>
         </div>
-
-<!--------------Cart items details------------>
-    <div class="small-container cart-page">
-        <table>
-            <tr>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Subtotal</th>
-            </tr>
-            <tr>
-                <td>   
-                    <div class="cart-info">
-                        <img src="images/product1-cart.jpg" alt="">
-                        <div>
-                            <p>Black Dog Bandana</p>
-                            <small>Price: $50.00</small>
-                            <br>
-                            <a href="">Remove</a>
-                        </div>
-                    </div>
-                </td>
-                <td><input type="number" value="1"></td>
-                <td>$50.00</td>
-            </tr>
-            <tr>
-                <td>   
-                    <div class="cart-info">
-                        <img src="images/product10-cart.jpg" alt="">
-                        <div>
-                            <p>Black Dog Suetter</p>
-                            <small>Price: $100.00</small>
-                            <br>
-                            <a href="">Remove</a>
-                        </div>
-                    </div>
-                </td>
-                <td><input type="number" value="1"></td>
-                <td>$100.00</td>
-            </tr>
-            <tr>
-                <td>   
-                    <div class="cart-info">
-                        <img src="images/toy2-cart.jpg" alt="">
-                        <div>
-                            <p>Red Bird Toy</p>
-                            <small>Price: $30.00</small>
-                            <br>
-                            <a href="">Remove</a>
-                        </div>
-                    </div>
-                </td>
-                <td><input type="number" value="1"></td>
-                <td>$30.00</td>
-            </tr>
-        </table>
-
-        <div class="total-price">
-            <table>
-                <tr>
-                    <td>Subtotal</td>
-                    <td>$180.00</td>
-                </tr>
-                <tr>
-                    <td>Tax</td>
-                    <td>$30.00</td>
-                </tr>
-                <tr>
-                    <td>Total</td>
-                    <td>$210.00</td>
-                </tr>
-            </table>
-        </div>
-    </div>
     
+    <!------------ products ------------>
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>Food</h2>
+                <select name="" id="">
+                    <option value="">Default</option>
+                    <option value="">Price</option>
+                    <option value="">Popular</option>
+                    <option value="">Ratings</option>
+                    <option value="">Sale</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/food2.jpg" alt="">
+                    <h4>Royal Canin Small Adult</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>$650.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/food3.jpg" alt="">
+                    <h4>Cunipic Aldut Rabbit</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>$450.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/food4.jpg" alt="">
+                    <h4>Cunipic Guinea Pigs</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>$500.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/food1.jpg" alt="">
+                    <h4>WholeHearted Cat </h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>$700.00</p>
+                </div>
+            </div>
 
-
-   
+            <div class="page-btn">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>&#8594;</span>
+            </div>
+        </div>
 <!-----------------footer ---------------->        
     <div class="footer">
         <div class="container">
@@ -168,6 +160,5 @@
             }
         }
     </script>
-
 </body>
 </html>
