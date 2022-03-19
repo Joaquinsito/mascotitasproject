@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification - Mascotitas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,500;0,700;1,600&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c6935fce95.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo2-removebg-preview.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="faqs.html">Faqs</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/car.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <a href="profile.html">My Profile</a>
+        <a href="orders.html">My Orders</a>
+        <a class="active" href="notifications.html">Notifications</a>
+        <a href="address.html">My Addresses</a>
+    </div>
+    <div class="content">
+        <br>
+        <h2>Thanks for your purchase!</h2>
+        <br>
+        <div class="text">
+        <p>We received your order: 901328</p>
+        <p>Your payment has been confirmed. For more details go to the My Orders section</p>
+        <a href="orders.html" class="btn">My orders &#8594;</a>
+    </div>
+        <img id="banner" src="images/banner2.png">
+    </div>
+</body>
