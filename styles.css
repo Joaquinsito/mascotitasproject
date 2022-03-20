@@ -97,6 +97,9 @@ p{
     padding-left: 25px;
     padding-right: 25px;
 }
+.container-2{
+    padding-top: 100px;
+}
 .row{
     display: flex;
     align-items: center;
@@ -279,34 +282,7 @@ ul{
     display: none;
 }
 
-/*media query for menu*/
-@media only screen and (max-width:800px){
-    nav ul{
-        position: absolute;
-        top:70px;
-        left: 0;
-        background: #333;
-        width: 100%;
-        overflow: hidden;
-        transition: max-height 0.5s;
-    }
 
-    nav ul li{
-        display: block;
-        margin-right: 50px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    nav ul li a{
-        color: #fff;
-
-    }
-    .menu-icon{
-        display: block;
-        cursor: pointer;
-    }
-}
 
 /*-------all products ------------*/
 
@@ -559,6 +535,12 @@ form a{
     .cart-info p{
         display: none;
     }
+    .container-2{
+        padding-top: 70px;
+    }
+    .profile-list{
+        display: block;
+    }
 }
 
 /* Side Menu */
@@ -633,6 +615,12 @@ form a{
       margin: 0 auto;
       padding: 70px;
   }
+.profile-list{
+    text-decoration: none;
+    list-style: none;
+    font-style: italic;
+    display: none;
+}
 
   /*-----My Orders-----------*/
   
@@ -773,4 +761,37 @@ div.text p{
     background: #563434 ;
 }
 
-  
+/*media query for menu*/
+@media only screen and (max-width:800px){
+    nav ul{
+        position: absolute;
+        top:70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+        color: #fff;
+
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .container-2{
+        padding-top: 70px;
+    }
+    .profile-list{
+        display: block;
+    }
+}

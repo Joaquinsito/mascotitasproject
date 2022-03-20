@@ -50,17 +50,22 @@
         </div>
     </div>
 
-    <div class="sidebar">
+    <!-- <div class="sidebar">
         <a class="active" href="profile.html">My Profile</a>
         <a href="orders.html">My Orders</a>
         <a href="notifications.html">Notifications</a>
         <a href="address.html">My Addresses</a>
-      </div>
+      </div> -->
       
       <!-- Page content -->
-      <div class="content">
-          <div><h1>My profile</h1></div>
-          <br><hr>
+      <div class="container container-2">
+          <div><h1 class="title">My profile</h1></div>
+          <div class="small-container" id="profile">
+                <li class="profile-list"><a href="profile.html">My Profile</a></li>
+                <li class="profile-list"><a href="orders.html">My Orders</a></li>
+                <li class="profile-list"><a href="notifications.html">Notifications</a></li>
+                <li class="profile-list"><a href="address.html">My Adresses</a></li>
+          </div>
           <div class="form">
               <form>
                   <p>Change your Username</p>
@@ -73,4 +78,23 @@
               </form>
           </div>
       </div>
+
+
+
+      <script>
+        var MenuItems = document.getElementById("MenuItems");
+        var profileItems = document.getElementById("profile")
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+                
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
 </body>
+</html>

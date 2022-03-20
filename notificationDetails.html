@@ -50,21 +50,36 @@
         </div>
     </div>
 
-    <div class="sidebar">
+    <!-- <div class="sidebar">
         <a href="profile.html">My Profile</a>
         <a href="orders.html">My Orders</a>
         <a class="active" href="notifications.html">Notifications</a>
         <a href="address.html">My Addresses</a>
-    </div>
-    <div class="content">
+    </div> -->
+    <div class="container container-2">
         <br>
-        <h2>Thanks for your purchase!</h2>
+        <h2 class="title">Thanks for your purchase!</h2>
         <br>
         <div class="text">
         <p>We received your order: 901328</p>
         <p>Your payment has been confirmed. For more details go to the My Orders section</p>
         <a href="orders.html" class="btn">My orders &#8594;</a>
     </div>
-        <img id="banner" src="images/banner2.png">
+        <img id="banner" src="images/banner2.png" class="image">
     </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
 </body>
+</html>

@@ -50,17 +50,24 @@
         </div>
     </div>
 
-    <div class="sidebar">
+    <!-- <div class="sidebar">
         <a href="profile.html">My Profile</a>
         <a href="orders.html">My Orders</a>
         <a href="notifications.html">Notifications</a>
         <a class="active" href="address.html">My Addresses</a>
-    </div>
-    <div class="content">
+    </div> -->
+    <div class="container container-2">
         <div>
-            <h1>My Addresses</h1>
+            <h1 class="title">My Addresses</h1>
         </div>
-        <br><hr><br>
+        <br><br>
+        <div class="small-container" id="profile">
+            <li class="profile-list"><a href="profile.html">My Profile</a></li>
+            <li class="profile-list"><a href="orders.html">My Orders</a></li>
+            <li class="profile-list"><a href="notifications.html">Notifications</a></li>
+            <li class="profile-list"><a href="address.html">My Adresses</a></li>
+      </div>
+      <br>
         <div class="table">
             <table>
                 <tr>
@@ -76,4 +83,19 @@
         <div class="button"><a href="addAddress.html" class="btn">Add new address &#8594;</a></div>
         
     </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
 </body>
+</html>

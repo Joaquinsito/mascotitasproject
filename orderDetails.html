@@ -50,18 +50,18 @@
         </div>
     </div>
 
-    <div class="sidebar">
+    <!-- <div class="sidebar">
         <a href="profile.html">My Profile</a>
         <a class="active" href="orders.html">My Orders</a>
         <a href="notifications.html">Notifications</a>
         <a href="address.html">My Addresses</a>
-    </div>
-    <div class="content">
+    </div> -->
+    <div class="container container-2">
         <div>
-            <h2>Order Details</h2>
+            <h2 class="title">Order Details</h2>
         </div>
         <br>
-        <hr><br><br>
+        <br><br>
         <div class="orderDetails">
             <div class="left">
                 <p>Order ID</p>
@@ -127,5 +127,18 @@
             </table>
         </div>
     </div>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
 
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
 </body>
+</html>
