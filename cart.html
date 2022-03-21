@@ -120,7 +120,111 @@
         </div>
     </div>
     
+<!--------------Paypal----------->  
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paypal Page</title>
+  </head>
+  <body>
+    <style>
+      #confirmation {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
 
+      #confirmation h1 {
+        border-bottom-width: 8px;
+        border-bottom-style: solid;
+        border-bottom-color: #46cd99;
+        display: block;
+        font-family: "Oswald";
+      }
+
+      #confirmation p {
+        font-family: "Open Sans", sans-serif;
+      }
+
+      .option {
+        margin: 10px;
+        padding: 6px 10px 6px 10px;
+        border: 1px solid grey;
+        border-radius: 4px;
+        font-size: 1em;
+        transition-duration: 0.5s;
+        font-family: "Open Sans", sans-serif;
+      }
+      .option:hover {
+        cursor: pointer;
+        background-color: #46cd99;
+      }
+      .option:active {
+        background-color: #53b386;
+      }
+      .option.selected {
+        background-color: #46cd99;
+      }
+    </style>
+
+    <div id="confirmation" style="display: none">
+      <h1>THANK YOU!</h1>
+      <p>We have received your order and we will ship it within 48 hours.</p>
+      <p>Due to extended COVID-19 restrictions and high parcel volumes, you may experience delivery delays from our delivery partner.</p>
+    </div>
+    <div id="smart-button-container">
+        <div style="text-align: center;">
+          <div id="paypal-button-container"></div>
+        </div>
+      </div>
+    <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+    <script>
+      function initPayPalButton() {
+        paypal.Buttons({
+          style: {
+            shape: 'rect',
+            color: 'gold',
+            layout: 'vertical',
+            label: 'paypal',
+            
+          },
+  
+          createOrder: function(data, actions) {
+            return actions.order.create({
+              purchase_units: [{"description":"1 x Black Dog Bandana,\n1 x Black Dog Suetter,\n1 x Red Bird Toy","amount":{"currency_code":"USD","value":210,"breakdown":{"item_total":{"currency_code":"USD","value":180},"shipping":{"currency_code":"USD","value":0},"tax_total":{"currency_code":"USD","value":30}}}}]
+            });
+          },
+  
+          onApprove: function(data, actions) {
+            return actions.order.capture().then(function(orderData) {
+              
+              // Full available details
+              console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+  
+              // Show a success message within this page, e.g.
+              const element = document.getElementById('paypal-button-container');
+              element.innerHTML = '';
+              element.innerHTML = '<h3>Thank you for your payment!</h3>';
+  
+              // Or go to another URL:  actions.redirect('thank_you.html');
+              
+            });
+          },
+  
+          onError: function(err) {
+            console.log(err);
+          }
+        }).render('#paypal-button-container');
+      }
+      initPayPalButton();
+    </script>
+  </body>
+</html>
+</div>
 
    
 <!-----------------footer ---------------->        
