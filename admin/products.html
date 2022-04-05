@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Mascotitas</title>
+    <link rel="stylesheet" href="adminstyle.css">
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="/images/icons8-dog-16.png" alt="">
+                    <h2>Mascot<span class="danger">ita</span>s</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="admin.html">
+                    <span class="material-icons-sharp">dashboard</span>
+                    <h3>Dasboard</h3>
+                </a>
+                <a href="products.html" class="active">
+                    <span class="material-icons-sharp">inventory</span>
+                    <h3>Products</h3>
+                </a>
+                <a href="orders.html">
+                    <span class="material-icons-sharp">receipt_long</span>
+                    <h3>Orders</h3>
+                </a>
+                <a href="analytics.html">
+                    <span class="material-icons-sharp">analytics</span>
+                    <h3>Statistics</h3>
+                </a>
+                <a href="bitacora.html">
+                    <span class="material-icons-sharp">menu_book</span>
+                    <h3>Bitacora</h3>
+                </a>
+                <a href="addproduct.html">
+                    <span class="material-icons-sharp">add</span>
+                    <h3>Add product</h3>
+                </a>
+                <a href="/index.html">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+
+
+        <main>
+            <h1>Products</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+            
+            <div class="recent-orders">
+                <h2>Recent Orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Product Number</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Red Bandan</td>
+                            <td>85631</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Red Toy</td>
+                            <td>85633</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Red Bandan</td>
+                            <td>85631</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Red Bandan</td>
+                            <td>85631</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Red Bandan</td>
+                            <td>85631</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Red Bandan</td>
+                            <td>85631</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+        </main>
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey <b>Grunon</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="/images/dog1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+ <script src="index.js">
+
+ </script>
+</body>
+</html>
