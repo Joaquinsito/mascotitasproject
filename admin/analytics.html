@@ -63,6 +63,141 @@
             <div class="date">
                 <input type="date">
             </div>
+            <div class="insights">
+                <div class="sales">
+                    <span class="material-icons-sharp">trending_up</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Sales</h3>
+                            <h1>10,000</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last week</small>
+                </div>
+
+
+
+                <div class="expenses">
+                    <span class="material-icons-sharp">bar_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Expenses</h3>
+                            <h1>14,000</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>62%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last week</small>
+                </div>
+
+
+
+                <div class="income">
+                    <span class="material-icons-sharp">stacked_line_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Income</h3>
+                            <h1>25,000</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>44%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last week</small>
+                </div>
+            </div>
+
+
+
+            <div class="charts">
+                <div class="insights-chart">
+                    <div id="chart" ></div>
+                    <div id="chart2"></div>
+                </div>
+            </div>
+
+
+            <div class="insights">
+                <div class="g3">
+                    <span class="material-icons-sharp">shopping_cart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Sales</h3>
+                            <h1>50</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>90%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last week</small>
+                </div>
+
+
+
+                <div class="g2">
+                    <span class="material-icons-sharp">shopping_basket</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total products</h3>
+                            <h1>65</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>55%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last week</small>
+                </div>
+
+
+
+                <div class="g1">
+                    <span class="material-icons-sharp">inventory_2</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Stock Added</h3>
+                            <h1>25</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>30%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last week</small>
+                </div>
+            </div>
             
         </main>
 
@@ -87,7 +222,69 @@
 
 
  <script src="index.js">
-
  </script>
+ <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+ <script>var options = {
+      title: {
+            text: 'Sells March',
+            align: 'center',
+            style: {
+            fontSize:  '20px',
+            fontWeight:  'bold',
+            fontFamily:  'poppins',
+            color:  '#263238'
+             }
+        },
+    chart: {
+      type: 'line'
+    },
+    series: [{
+      name: 'sales',
+      data: [30,40,35,50]
+    }],
+    xaxis: {
+      categories: ["Week 1","Week 2","Week 3","Week 4"]
+    }
+  }
+  
+  var chart = new ApexCharts(document.querySelector("#chart"), options);
+  
+  chart.render();</script>
+  
+  <script>
+     
+     var options = {
+        title: {
+            text: 'Best sellers March',
+            align: 'center',
+            style: {
+            fontSize:  '20px',
+            fontWeight:  'bold',
+            fontFamily:  'poppins',
+            color:  '#263238'
+             }
+        },
+        labels: ['Red dog bandana', 'Dark dog bandana', 'Red toy', 'Food', 'Reflective Clothes'],
+          series: [13, 17, 5, 10, 5],
+          colors:['#ae2012', '#001219', '#ca6702', '#94d2bd', '#005f73'],
+          chart: {
+          type: 'donut',
+        },
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            chart: {
+              width: 200
+            },
+            legend: {
+              position: 'bottom'
+            }
+          }
+        }]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart2"), options);
+        chart.render();
+  </script>
 </body>
 </html>
