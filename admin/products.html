@@ -46,10 +46,6 @@
                     <span class="material-icons-sharp">menu_book</span>
                     <h3>Bitacora</h3>
                 </a>
-                <a href="addproduct.html">
-                    <span class="material-icons-sharp">add</span>
-                    <h3>Add product</h3>
-                </a>
                 <a href="/index.html">
                     <span class="material-icons-sharp">logout</span>
                     <h3>Logout</h3>
@@ -60,68 +56,87 @@
 
         <main>
             <h1>Products</h1>
-            <div class="date">
-                <input type="date">
-            </div>
-            
+                
             <div class="recent-orders">
-                <h2>Recent Orders</h2>
                 <table>
                     <thead>
                         <tr>
+                            <th>Image</th>
                             <th>Product Name</th>
                             <th>Product Number</th>
-                            <th>Payment</th>
-                            <th>Status</th>
+                            <th>Price</th>
+                            <th>Category</th>
+                            <th>Stock</th>
+                            <th></th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
+                            <td><img src="../images/product1-1.jpg" alt=""></td>
                             <td>Red Bandan</td>
                             <td>85631</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
+                            <td>$150</td>
+                            <td>Accesories</td>
+                            <td>50</td>
+                            <td class="primary"><a href="updateproduct.html">Details</a></td>
+                            <td><a><span class="material-icons-sharp">delete</span></a></td>
                         </tr>
                         <tr>
+                            <td><img src="../images/toy2.jpg" alt=""></td>
                             <td>Red Toy</td>
                             <td>85633</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
+                            <td>$100</td>
+                            <td>Toys</td>
+                            <td>69</td>
+                            <td class="primary"><a href="updateproduct.html">Details</a></td>
+                            <td><a><span class="material-icons-sharp">delete</span></a></td>
                         </tr>
                         <tr>
-                            <td>Red Bandan</td>
-                            <td>85631</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
+                            <td><img src="../images/food1.jpg" alt=""></td>
+                            <td>Food Cat</td>
+                            <td>85693</td>
+                            <td>$450</td>
+                            <td>Food</td>
+                            <td>80</td>
+                            <td class="primary"><a href="updateproduct.html">Details</a></td>
+                            <td><a><span class="material-icons-sharp">delete</span></a></td>
                         </tr>
                         <tr>
+                            <td><img src="../images/product1-1.jpg" alt=""></td>
                             <td>Red Bandan</td>
                             <td>85631</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
+                            <td>$150</td>
+                            <td>Accesories</td>
+                            <td>50</td>
+                            <td class="primary"><a href="updateproduct.html">Details</a></td>
+                            <td><a><span class="material-icons-sharp">delete</span></a></td>
                         </tr>
                         <tr>
-                            <td>Red Bandan</td>
-                            <td>85631</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
+                            <td><img src="../images/toy2.jpg" alt=""></td>
+                            <td>Red Toy</td>
+                            <td>85633</td>
+                            <td>$100</td>
+                            <td>Toys</td>
+                            <td>69</td>
+                            <td class="primary"><a href="updateproduct.html">Details</a></td>
+                            <td><a><span class="material-icons-sharp">delete</span></a></td>
                         </tr>
                         <tr>
-                            <td>Red Bandan</td>
-                            <td>85631</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
+                            <td><img src="../images/food1.jpg" alt=""></td>
+                            <td>Food Cat</td>
+                            <td>85693</td>
+                            <td>$450</td>
+                            <td>Food</td>
+                            <td>80</td>
+                            <td class="primary"><a href="updateproduct.html">Details</a></td>
+                            <td><a><span class="material-icons-sharp">delete</span></a></td>
                         </tr>
                     </tbody>
                 </table>
                 <a href="#">Show All</a>
+                <div class="button"><button type="submit" class="btn" onclick = "location='addproduct.html'">+ Add</button></div>
+                
             </div>
         </main>
 
