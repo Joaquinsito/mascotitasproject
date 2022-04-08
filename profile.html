@@ -56,32 +56,37 @@
         <a href="notifications.html">Notifications</a>
         <a href="address.html">My Addresses</a>
       </div> -->
-      
-      <!-- Page content -->
-      <div class="container container-2">
-          <div><h1 class="title">My profile</h1></div>
-          <div class="small-container" id="profile">
+
+    <!-- Page content -->
+    <div class="container-2">
+        <div class="back">
+            <div>
+                <br>
+                <h1 class="title">My profile</h1>
+            </div>
+            <div class="small-container" id="profile">
                 <li class="profile-list"><a href="profile.html">My Profile</a></li>
                 <li class="profile-list"><a href="orders.html">My Orders</a></li>
                 <li class="profile-list"><a href="notifications.html">Notifications</a></li>
                 <li class="profile-list"><a href="address.html">My Adresses</a></li>
-          </div>
-          <div class="form">
-              <form>
-                  <p>Change your Username</p>
-                  <input type="text" placeholder="New Username">
-                  <p>Change your email</p>
-                  <input type="email" placeholder="New Email">
-                  <p>Change your password</p>
-                  <input type="password" placeholder="New Password">
-                  <button type="submit" class="btn">Save</button>
-              </form>
-          </div>
-      </div>
+            </div>
+            <div class="form">
+                <form>
+                    <p>Change your Username</p>
+                    <input type="text" placeholder="New Username">
+                    <p>Change your email</p>
+                    <input type="email" placeholder="New Email">
+                    <p>Change your password</p>
+                    <input type="password" placeholder="New Password">
+                    <button type="submit" class="btn">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
 
-      <script>
+    <script>
         var MenuItems = document.getElementById("MenuItems");
         var profileItems = document.getElementById("profile")
         MenuItems.style.maxHeight = "0px";
@@ -89,7 +94,7 @@
         function menutoggle() {
             if (MenuItems.style.maxHeight == "0px") {
                 MenuItems.style.maxHeight = "200px";
-                
+
             }
             else {
                 MenuItems.style.maxHeight = "0px";
@@ -97,4 +102,5 @@
         }
     </script>
 </body>
+
 </html>
