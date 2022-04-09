@@ -778,6 +778,13 @@ div.text p{
  div.button{
      text-align: right;
  }
+ .button-login{
+    text-align: right;
+    background-color: #ff523b;
+    width: 10px;
+    height: 20px;
+}
+
 
  div.address{
     background-color: rgb(240, 240, 240);
