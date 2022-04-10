@@ -101,15 +101,17 @@ p{
     padding-top: 100px;
     background: radial-gradient(#fff, #ffd6d6);
     height: 100%;
+    padding-bottom: 100px;
 
 }
 
 .container-2 .back{
     margin: 0 auto;
     background-color: white;
-    width: 80%;
+    width: 70%;
     padding-right: 30px;
     padding-left: 20px;
+    padding-bottom: 50px;
 }
 .row{
     display: flex;
@@ -652,6 +654,20 @@ form a{
     }
     .sidebar a {float: left;}
     div.content {margin-left: 0;}
+
+    .form {
+        padding-top: 30px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .container-2 .back{
+        margin: 0 auto;
+        background-color: white;
+        width: 90%;
+        height: 100%;
+    }
+
   }
   
   /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
@@ -673,7 +689,6 @@ form a{
   .form {
       width: 80%;
       margin: 0 auto;
-      padding: 70px;
   }
 .profile-list{
     text-decoration: none;
