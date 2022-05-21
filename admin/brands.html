@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +7,9 @@
     <title>Admin Mascotitas</title>
     <link rel="stylesheet" href="adminstyle.css">
     <!-- Material icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
 </head>
-
 <body>
     <div class="container">
         <aside>
@@ -31,7 +30,7 @@
                     <span class="material-icons-sharp">dashboard</span>
                     <h3>Dasboard</h3>
                 </a>
-                <a href="products.html" class="active">
+                <a href="products.html">
                     <span class="material-icons-sharp">inventory</span>
                     <h3>Products</h3>
                 </a>
@@ -39,7 +38,7 @@
                     <span class="material-icons-sharp">category</span>
                     <h3>Categories</h3>
                 </a>
-                <a href="brands.html"  >
+                <a href="brands.html" class="active" >
                     <span class="material-icons-sharp">sell</span>
                     <h3>Brands</h3>
                 </a>
@@ -55,7 +54,7 @@
                     <span class="material-icons-sharp">reviews</span>
                     <h3>Reviews</h3>
                 </a>
-                <a href="supplier.html">
+                <a href="supplier.html" >
                     <span class="material-icons-sharp">local_shipping</span>
                     <h3>Suppliers</h3>
                 </a>
@@ -76,50 +75,63 @@
 
 
         <main>
-            <h1>Products</h1>
+            <h1>Brands</h1>
+                
             <div class="recent-orders">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>IdBrand</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Royal Canin</td>
+                            <td class="primary"><a href="updateBrand.html">Edit</a></td>
+                            <td><a><span class="material-icons-sharp">delete</span></a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>HillS</td>
+                            <td class="primary"><a href="updateBrand.html">Edit</a></td>
+                            <td><a><span class="material-icons-sharp">delete</span></a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Pedigree</td>
+                            <td class="primary"><a href="updateBrand.html">Edit</a></td>
+                            <td><a><span class="material-icons-sharp">delete</span></a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Whiskas</td>
+                            <td class="primary"><a href="updateBrand.html">Edit</a></td>
+                            <td><a><span class="material-icons-sharp">delete</span></a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>biozoo</td>
+                            <td class="primary"><a href="updateBrand.html">Edit</a></td>
+                            <td><a><span class="material-icons-sharp">delete</span></a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Woof</td>
+                            <td class="primary"><a href="updateBrand.html">Edit</a></td>
+                            <td><a><span class="material-icons-sharp">delete</span></a></td>
+                        </tr>
 
-                <form>
-                    <h2 style="text-align: center;">Update Product</h2>
-                    <p>ID <input type="number" placeholder=""> </p>
-                    <p>Name <input type="text" placeholder=""> </p>
-                    <p>Description <input type="text" placeholder=""> </p>
-                    <p>Price <input type="number" placeholder=""> </p>
-                    <p>Category <select name="" id="">
-                            <option value="">Select Category</option>
-                            <option value="">Food</option>
-                            <option value="">Accesory</option>
-                            <option value="">Toy</option>
-                        </select> </p>
-                    <p>Size <select name="" id="">
-                            <option value="">Select Size</option>
-                            <option value="">L</option>
-                            <option value="">M</option>
-                            <option value="">S</option>
-                        </select></p>
-                    <p>Weight <input type="number" placeholder="kg"> </p>
-                    <p>Lifestage <select name="" id="">
-                            <option value="">Select Lifestage</option>
-                            <option value="">Puppy</option>
-                            <option value="">Adult</option>
-                            <option value="">Senior</option>
-                        </select> </p>
-                    <p>Species <select name="" id="">
-                            <option value="">Select Species</option>
-                            <option value="">Dog</option>
-                            <option value="">Cat</option>
-                            <option value="">Hamster</option>
-                        </select>
-                    </p>
-                    <p>Stock <input type="number" placeholder=""> </p>
-                    <p>Image <input type="file" id="files" name="files[]" />
-                        <br /> <output id="list"></output>
-                    </p>
-                    <br><br>
-                    <div><button type="submit" class="btn">Save</button></div>
-                </form>
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+                <div class="button"><button type="submit" class="btn" onclick = "location='addBrand.html'">+ Add</button></div>
+                
             </div>
-
         </main>
 
         <div class="right">
@@ -139,12 +151,11 @@
             </div>
         </div>
     </div>
-    </div>
+ </div>
 
 
-    <script src="index.js">
+ <script src="index.js">
 
-    </script>
+ </script>
 </body>
-
 </html>

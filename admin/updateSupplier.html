@@ -31,7 +31,7 @@
                     <span class="material-icons-sharp">dashboard</span>
                     <h3>Dasboard</h3>
                 </a>
-                <a href="products.html" class="active">
+                <a href="products.html">
                     <span class="material-icons-sharp">inventory</span>
                     <h3>Products</h3>
                 </a>
@@ -55,7 +55,7 @@
                     <span class="material-icons-sharp">reviews</span>
                     <h3>Reviews</h3>
                 </a>
-                <a href="supplier.html">
+                <a href="supplier.html" class="active">
                     <span class="material-icons-sharp">local_shipping</span>
                     <h3>Suppliers</h3>
                 </a>
@@ -76,45 +76,24 @@
 
 
         <main>
-            <h1>Products</h1>
+            <h1>Suppliers</h1>
             <div class="recent-orders">
 
                 <form>
-                    <h2 style="text-align: center;">Update Product</h2>
+                    <h2 style="text-align: center;">Update Supplier</h2>
                     <p>ID <input type="number" placeholder=""> </p>
                     <p>Name <input type="text" placeholder=""> </p>
-                    <p>Description <input type="text" placeholder=""> </p>
-                    <p>Price <input type="number" placeholder=""> </p>
-                    <p>Category <select name="" id="">
-                            <option value="">Select Category</option>
-                            <option value="">Food</option>
-                            <option value="">Accesory</option>
-                            <option value="">Toy</option>
+                    <p>Lastname<input type="text" placeholder=""> </p>
+                    <p>Brand ID<select name="" id="">
+                            <option value="">Select Brand ID</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
                         </select> </p>
-                    <p>Size <select name="" id="">
-                            <option value="">Select Size</option>
-                            <option value="">L</option>
-                            <option value="">M</option>
-                            <option value="">S</option>
-                        </select></p>
-                    <p>Weight <input type="number" placeholder="kg"> </p>
-                    <p>Lifestage <select name="" id="">
-                            <option value="">Select Lifestage</option>
-                            <option value="">Puppy</option>
-                            <option value="">Adult</option>
-                            <option value="">Senior</option>
-                        </select> </p>
-                    <p>Species <select name="" id="">
-                            <option value="">Select Species</option>
-                            <option value="">Dog</option>
-                            <option value="">Cat</option>
-                            <option value="">Hamster</option>
-                        </select>
-                    </p>
-                    <p>Stock <input type="number" placeholder=""> </p>
-                    <p>Image <input type="file" id="files" name="files[]" />
-                        <br /> <output id="list"></output>
-                    </p>
+                    <p>Phone<input type="number" placeholder=""> </p>
                     <br><br>
                     <div><button type="submit" class="btn">Save</button></div>
                 </form>

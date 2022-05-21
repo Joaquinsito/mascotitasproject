@@ -31,7 +31,7 @@
                     <span class="material-icons-sharp">dashboard</span>
                     <h3>Dasboard</h3>
                 </a>
-                <a href="products.html" class="active">
+                <a href="products.html">
                     <span class="material-icons-sharp">inventory</span>
                     <h3>Products</h3>
                 </a>
@@ -51,11 +51,11 @@
                     <span class="material-icons-sharp">receipt_long</span>
                     <h3>Orders</h3>
                 </a>
-                <a href="reviews.html">
+                <a href="reviews.html" class="active">
                     <span class="material-icons-sharp">reviews</span>
                     <h3>Reviews</h3>
                 </a>
-                <a href="supplier.html">
+                <a href="supplier.html" >
                     <span class="material-icons-sharp">local_shipping</span>
                     <h3>Suppliers</h3>
                 </a>
@@ -76,45 +76,23 @@
 
 
         <main>
-            <h1>Products</h1>
+            <h1>Review Details</h1>
             <div class="recent-orders">
 
                 <form>
-                    <h2 style="text-align: center;">Update Product</h2>
-                    <p>ID <input type="number" placeholder=""> </p>
-                    <p>Name <input type="text" placeholder=""> </p>
-                    <p>Description <input type="text" placeholder=""> </p>
-                    <p>Price <input type="number" placeholder=""> </p>
-                    <p>Category <select name="" id="">
-                            <option value="">Select Category</option>
-                            <option value="">Food</option>
-                            <option value="">Accesory</option>
-                            <option value="">Toy</option>
+                    <h2 style="text-align: center;">Review</h2>
+                    <p>ReviewID <input type="number" placeholder="0001" disabled>  </p>
+                    <p>Date<input type="date" value="2021-04-03" disabled> </p>
+                    <p>Product ID <input type="text" placeholder="0003" disabled></p>
+                    <p>Client ID <input type="number" placeholder="0001" disabled> </p>
+                    <p>Description <input type="text" value="I love this product and my dog ​​loved it."> </p>
+                    <p>Score <input type="number" placeholder="" value="5" disabled> </p>
+                    <p>Status <select name="" id="">
+                            <option value="">Select Status</option>
+                            <option value="">Approved</option>
+                            <option value="">Not Approved</option>
+                            <option value="">Pending</option>
                         </select> </p>
-                    <p>Size <select name="" id="">
-                            <option value="">Select Size</option>
-                            <option value="">L</option>
-                            <option value="">M</option>
-                            <option value="">S</option>
-                        </select></p>
-                    <p>Weight <input type="number" placeholder="kg"> </p>
-                    <p>Lifestage <select name="" id="">
-                            <option value="">Select Lifestage</option>
-                            <option value="">Puppy</option>
-                            <option value="">Adult</option>
-                            <option value="">Senior</option>
-                        </select> </p>
-                    <p>Species <select name="" id="">
-                            <option value="">Select Species</option>
-                            <option value="">Dog</option>
-                            <option value="">Cat</option>
-                            <option value="">Hamster</option>
-                        </select>
-                    </p>
-                    <p>Stock <input type="number" placeholder=""> </p>
-                    <p>Image <input type="file" id="files" name="files[]" />
-                        <br /> <output id="list"></output>
-                    </p>
                     <br><br>
                     <div><button type="submit" class="btn">Save</button></div>
                 </form>
