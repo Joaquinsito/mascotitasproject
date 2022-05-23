@@ -42,11 +42,11 @@
                     <span class="material-icons-sharp">sell</span>
                     <h3>Brands</h3>
                 </a>
-                <a href="clients.html" >
+                <a href="clients.html" class="active" >
                     <span class="material-icons-sharp">person</span>
                     <h3>Clients</h3>
                 </a>
-                <a href="orders.html" class="active">
+                <a href="orders.html">
                     <span class="material-icons-sharp">receipt_long</span>
                     <h3>Orders</h3>
                 </a>
@@ -75,91 +75,83 @@
 
 
         <main>
-            <h1>Orders</h1>
-            <div class="date">
-                <input type="date">
-            </div>
-            
+            <h1>Clients</h1>
+                
             <div class="recent-orders">
-                <h2>Recent Orders</h2>
                 <table>
                     <thead>
                         <tr>
-                            <th>Order ID</th>
-                            <th>Date</th>
-                            <th>User ID</th>
-                            <th>Total</th>
-                            <th>Payment</th>
-                            <th>Status</th>
+                            <th>IdClient</th>
+                            <th>Name</th>
+                            <th>Last Name</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                            <th></th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>00001</td>
-                            <td>04/03/2021</td>
-                            <td>0998</td>
-                            <td>$200</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary"><a href="orderDetails.html">Details</a></td>
+                            <td>01</td>
+                            <td>Mariana</td>
+                            <td>Martinez</td>
+                            <td>4449090890</td>
+                            <td>mariana123@email.com</td>
+                            <td class="primary"><a href="updateClient.html">Edit</a></td>
+                            <td><a><span class="material-icons-sharp">delete</span></a></td>
                         </tr>
                         <tr>
-                            <td>00002</td>
-                            <td>28/02/2021</td>
-                            <td>0978</td>
-                            <td>$150</td>
-                            <td>Paid</td>
-                            <td class="success">Delivered</td>
-                            <td class="primary"><a href="orderDetails.html">Details</a></td>
+                            <td>02</td>
+                            <td>Octavio</td>
+                            <td>Ortega</td>
+                            <td>4449078945</td>
+                            <td>octavio123@email.com</td>
+                            <td class="primary"><a href="updateClient.html">Edit</a></td>
+                            <td><a><span class="material-icons-sharp">delete</span></a></td>
                         </tr>
                         <tr>
-                            <td>00003</td>
-                            <td>26/02/2021</td>
-                            <td>1000</td>
-                            <td>$170</td>
-                            <td>Paid</td>
-                            <td class="primary">Shipped</td>
-                            <td class="primary"><a href="orderDetails.html">Details</a></td>
+                            <td>03</td>
+                            <td>Ulises</td>
+                            <td>García</td>
+                            <td>4448992045</td>
+                            <td>ulises123@email.com</td>
+                            <td class="primary"><a href="updateClient.html">Edit</a></td>
+                            <td><a><span class="material-icons-sharp">delete</span></a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>04</td>
+                            <td>Mariana</td>
+                            <td>Martinez</td>
+                            <td>4449090890</td>
+                            <td>mariana123@email.com</td>
+                            <td class="primary"><a href="updateClient.html">Edit</a></td>
+                            <td><a><span class="material-icons-sharp">delete</span></a></td>
                         </tr>
                         <tr>
-                            <td>00004</td>
-                            <td>15/02/2021</td>
-                            <td>0900</td>
-                            <td>$50</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary"><a href="orderDetails.html">Details</a></td>
+                            <td>05</td>
+                            <td>Octavio</td>
+                            <td>Ortega</td>
+                            <td>4449078945</td>
+                            <td>octavio123@email.com</td>
+                            <td class="primary"><a href="updateClient.html">Edit</a></td>
+                            <td><a><span class="material-icons-sharp">delete</span></a></td>
                         </tr>
                         <tr>
-                            <td>00005</td>
-                            <td>10/02/2021</td>
-                            <td>0001</td>
-                            <td>$500</td>
-                            <td>Paid</td>
-                            <td class="success">Delivered</td>
-                            <td class="primary"><a href="orderDetails.html">Details</a></td>
+                            <td>06</td>
+                            <td>Ulises</td>
+                            <td>García</td>
+                            <td>4448992045</td>
+                            <td>ulises123@email.com</td>
+                            <td class="primary"><a href="updateClient.html">Edit</a></td>
+                            <td><a><span class="material-icons-sharp">delete</span></a></td>
                         </tr>
-                        <tr>
-                            <td>00006</td>
-                            <td>10/02/2021</td>
-                            <td>0942</td>
-                            <td>$170</td>
-                            <td>Paid</td>
-                            <td class="primary">Shipped</td>
-                            <td class="primary"><a href="orderDetails.html">Details</a></td>
-                        </tr>
-                        <tr>
-                            <td>00007</td>
-                            <td>1/02/2021</td>
-                            <td>0711</td>
-                            <td>$100</td>
-                            <td>Paid</td>
-                            <td class="success">Delivered</td>
-                            <td class="primary"><a href="orderDetails.html">Details</a></td>
-                        </tr>
+                        
                     </tbody>
                 </table>
+                <a href="#">Show All</a>
+                <div class="button"><button type="submit" class="btn" onclick = "location='addClient.html'">+ Add</button></div>
+                
             </div>
             <div class="page-btn">
                 <span>1</span>
